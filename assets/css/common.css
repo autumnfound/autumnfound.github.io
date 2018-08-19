@@ -1,10 +1,10 @@
-.footer .container a, .navigation nav li a {
+.footer .container a, .navigation nav .nav-link {
   color: #dedede;
 }
-.footer .container a:visited, .navigation nav li a:visited {
+.footer .container a:visited, .navigation nav .nav-link:visited {
   color: #aeaeae;
 }
-.footer .container a:hover, .navigation nav li a:hover {
+.footer .container a:hover, .navigation nav .nav-link:hover {
   color: #bababa;
 }
 
@@ -32,14 +32,19 @@ html, body {
 .navigation nav {
   position: absolute;
   width: 100%;
-  background-color: rgba(86, 61, 124, 0.5);
+  background-color: #563d7c;
 }
-.navigation nav ul {
-  list-style: none;
+.navigation nav .navbar-nav {
+  margin: 0 -16px -8px;
+  padding-top: 15px;
 }
-.navigation nav li {
-  display: inline-block;
+.navigation nav .nav-link {
+  padding: 12px 15px;
 }
+.navigation nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .footer {
   background-color: #563d7c;
   height: 500px;
@@ -48,6 +53,9 @@ html, body {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.footer .container ul {
+  list-style: none;
 }
 .footer .container div {
   margin: 15px 0;
@@ -63,7 +71,6 @@ html, body {
   display: block;
 }
 .footer .container .ext-links {
-  list-style: none;
   font-size: 2em;
 }
 .footer .container .ext-links li {

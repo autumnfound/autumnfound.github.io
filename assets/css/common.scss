@@ -7,6 +7,8 @@ $sm-breakpoint:576px;
 $md-breakpoint:768px;
 $lg-breakpoint:992px;
 
+$accent-colour: #563d7c;
+
 // global styling
 %link-alt {
     &           { color: $alt-text-color; }
@@ -30,16 +32,17 @@ html, body  { height: 100%; }
 
 // navigation bar styling
 .navigation nav {
-    &   { position: absolute; width: 100%; background-color: rgba(86, 61, 124, 0.5); }
-    ul  { list-style: none; }
-    li  { display: inline-block; }
-    li a { @extend %link-alt; }
+    &                       { position: absolute; width: 100%; background-color: $accent-colour; }
+    .navbar-nav             { margin: 0 -16px -8px; padding-top: 15px; }
+    .nav-link               { @extend %link-alt; padding: 12px 15px; }
+    .nav-link:hover         { background-color: rgba(255,255,255,.5) }
 }
 
 // Footer styling
 .footer {
-  & { background-color: #563d7c; height: 500px; color: $alt-text-color; position: absolute; bottom: 0; left: 0; width: 100%; }
+  & { background-color: $accent-colour; height: 500px; color: $alt-text-color; position: absolute; bottom: 0; left: 0; width: 100%; }
   .container {
+      ul                { list-style: none; }
       div               { margin: 15px 0; }
       h2                { text-align: center; }
       > div:last-child  { text-align: center; vertical-align: bottom; }
@@ -47,10 +50,8 @@ html, body  { height: 100%; }
       img               { display: block; }
 
       // external personal links
-      .ext-links        {
-          &             { list-style: none; font-size: 2em; }
-          li            { display: inline-block; margin: 0 15px; }
-      }
+      .ext-links        { font-size: 2em; }
+      .ext-links li     { display: inline-block; margin: 0 15px; }
   }
 
   @media (min-width:$sm-breakpoint) {
