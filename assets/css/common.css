@@ -38,6 +38,12 @@ html, body {
   margin: 0 -16px -8px;
   padding-top: 15px;
 }
+@media (min-width: 992px) {
+  .navigation nav .navbar-nav {
+    padding-top: 0px;
+    margin-top: -8px;
+  }
+}
 .navigation nav .nav-link {
   padding: 12px 15px;
 }
