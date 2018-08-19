@@ -1,0 +1,79 @@
+.footer .container a, .navigation nav li a {
+  color: #dedede;
+}
+.footer .container a:visited, .navigation nav li a:visited {
+  color: #aeaeae;
+}
+.footer .container a:hover, .navigation nav li a:hover {
+  color: #bababa;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.body {
+  padding-bottom: 500px;
+}
+.body > div {
+  margin: 15px 0;
+}
+@media (min-width: 576px) {
+  .body {
+    padding-bottom: 375px;
+  }
+}
+
+.navigation nav {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(86, 61, 124, 0.5);
+}
+.navigation nav ul {
+  list-style: none;
+}
+.navigation nav li {
+  display: inline-block;
+}
+.footer {
+  background-color: #563d7c;
+  height: 500px;
+  color: #dedede;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer .container div {
+  margin: 15px 0;
+}
+.footer .container h2 {
+  text-align: center;
+}
+.footer .container > div:last-child {
+  text-align: center;
+  vertical-align: bottom;
+}
+.footer .container img {
+  display: block;
+}
+.footer .container .ext-links {
+  list-style: none;
+  font-size: 2em;
+}
+.footer .container .ext-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+@media (min-width: 576px) {
+  .footer {
+    height: 375px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,59 @@
+//common.scss
+$alt-text-color:#dedede;
+$alt-link-visited:#aeaeae;
+$alt-link-hover:#bababa;
+
+$sm-breakpoint:576px;
+$md-breakpoint:768px;
+$lg-breakpoint:992px;
+
+// global styling
+%link-alt {
+    &           { color: $alt-text-color; }
+    &:visited   { color: $alt-link-visited; }
+    &:hover     { color: $alt-link-hover; }
+}
+
+// fix for positioning
+html, body  { height: 100%; }
+#wrapper    { min-height: 100%; position: relative; }
+
+// main body
+.body {
+    &       { padding-bottom: 500px; }
+    > div   { margin: 15px 0; }
+
+    @media (min-width:$sm-breakpoint) {
+        &   { padding-bottom: 375px; }
+    }
+}
+
+// navigation bar styling
+.navigation nav {
+    &   { position: absolute; width: 100%; background-color: rgba(86, 61, 124, 0.5); }
+    ul  { list-style: none; }
+    li  { display: inline-block; }
+    li a { @extend %link-alt; }
+}
+
+// Footer styling
+.footer {
+  & { background-color: #563d7c; height: 500px; color: $alt-text-color; position: absolute; bottom: 0; left: 0; width: 100%; }
+  .container {
+      div               { margin: 15px 0; }
+      h2                { text-align: center; }
+      > div:last-child  { text-align: center; vertical-align: bottom; }
+      a                 { @extend %link-alt; }
+      img               { display: block; }
+
+      // external personal links
+      .ext-links        {
+          &             { list-style: none; font-size: 2em; }
+          li            { display: inline-block; margin: 0 15px; }
+      }
+  }
+
+  @media (min-width:$sm-breakpoint) {
+      &                 { height: 375px; }
+  }
+}
