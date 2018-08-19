@@ -29,11 +29,16 @@ function includes() {
 function setTitle(col) {
     // update the page titles to use the page name
     var pageName = window.location.href.match(/.*\/([^\.]*?)\..*$/)[1];
-    // replace dashes and do casing
-    pageName = pageName.replace('-', ' ');
-    pageName = pageName.replace(/(^\w|\s[a-zA-Z])/g, function(match, str) {
-        return str.toUpperCase();
-    });
+    // index home can have no URL, so if none is found assume Index page
+    if (pageName == null) {
+        pageName = "Index";
+    } else {
+        // replace dashes and do casing
+        pageName = pageName.replace('-', ' ');
+        pageName = pageName.replace(/(^\w|\s[a-zA-Z])/g, function(match, str) {
+            return str.toUpperCase();
+        });
+    }
 
     // replace the placeholder with the new value
     var titleText = $('title').text().replace(/\{PAGE_NAME\}/, pageName);
