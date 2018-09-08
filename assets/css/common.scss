@@ -40,6 +40,7 @@ html, body  { height: 100%; }
     .nav-link               { @extend %link-alt; padding: 12px 15px; }
     .nav-link:hover         { background-color: rgba(255,255,255,.5) }
 }
+#banner                     { max-width: 100%; }
 
 // Footer styling
 .footer {
