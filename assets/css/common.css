@@ -1,55 +1,43 @@
-.footer .container a, .navigation nav .nav-link {
-  color: #dedede;
-}
-.footer .container a:visited, .navigation nav .nav-link:visited {
-  color: #aeaeae;
-}
-.footer .container a:hover, .navigation nav .nav-link:hover {
-  color: #bababa;
-}
+.navigation nav .nav-link, .footer .container a {
+  color: #dedede; }
+.navigation nav .nav-link:visited, .footer .container a:visited {
+  color: #aeaeae; }
+.navigation nav .nav-link:hover, .footer .container a:hover {
+  color: #bababa; }
 
 html, body {
-  height: 100%;
-}
+  height: 100%; }
 
 #wrapper {
   min-height: 100%;
-  position: relative;
-}
+  position: relative; }
 
 .body {
-  padding-bottom: 500px;
-}
+  padding-bottom: 500px; }
 .body > div {
-  margin: 15px 0;
-}
+  margin: 15px 0; }
 @media (min-width: 576px) {
   .body {
-    padding-bottom: 375px;
-  }
-}
+    padding-bottom: 375px; } }
 
 .navigation nav {
   position: absolute;
   width: 100%;
-  background-color: #563d7c;
-}
+  background-color: #563d7c; }
 .navigation nav .navbar-nav {
   margin: 0 -16px -8px;
-  padding-top: 15px;
-}
+  padding-top: 15px; }
 @media (min-width: 992px) {
   .navigation nav .navbar-nav {
     padding-top: 0px;
-    margin-top: -8px;
-  }
-}
+    margin-top: -8px; } }
 .navigation nav .nav-link {
-  padding: 12px 15px;
-}
+  padding: 12px 15px; }
 .navigation nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#banner {
+  max-width: 100%; }
 
 .footer {
   background-color: #563d7c;
@@ -58,35 +46,25 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-}
+  width: 100%; }
 .footer .container ul {
-  list-style: none;
-}
+  list-style: none; }
 .footer .container div {
-  margin: 15px 0;
-}
+  margin: 15px 0; }
 .footer .container h2 {
-  text-align: center;
-}
+  text-align: center; }
 .footer .container > div:last-child {
   text-align: center;
-  vertical-align: bottom;
-}
+  vertical-align: bottom; }
 .footer .container img {
-  display: block;
-}
+  display: block; }
 .footer .container .ext-links {
-  font-size: 2em;
-}
+  font-size: 2em; }
 .footer .container .ext-links li {
   display: inline-block;
-  margin: 0 15px;
-}
+  margin: 0 15px; }
 @media (min-width: 576px) {
   .footer {
-    height: 375px;
-  }
-}
+    height: 375px; } }
 
 /*# sourceMappingURL=common.css.map */
