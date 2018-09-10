@@ -1,5 +1,6 @@
 var $ = jQuery;
 
 $( document ).ready(function() {
-    // something will go here. Probably carousels and stuff
+    // activate all carousels on page load
+    $('.carousel').carousel();
 });

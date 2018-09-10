@@ -1,0 +1,7 @@
+id: personal-proj
+slides:
+    - src: /assets/images/site_1.png
+      alt: Tablet site image
+
+    - src: /assets/images/site_2.png
+      alt: Desktop site image

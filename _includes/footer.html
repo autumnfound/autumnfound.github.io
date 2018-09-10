@@ -3,15 +3,11 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <ul>
-                    <li>
-                        <a href="/site/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/site/portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/site/about-me.html">About Me</a>
-                    </li>
+                    {% for link in site.data.ia.pages %}
+                        <li>
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="ext-links col-xs-12 col-sm-6">
